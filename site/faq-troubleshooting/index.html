@@ -1,0 +1,624 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Personal portfolio of RK Manga, showcasing technical writing projects and expertise.">
+      
+      
+      
+        <link rel="canonical" href="https://sitename.example/faq-troubleshooting/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>FAQ / Troubleshooting Doc — Docker Desktop - Technical Writing Portfolio - RK Manga</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="cyan" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Technical Writing Portfolio - RK Manga" class="md-header__button md-logo" aria-label="Technical Writing Portfolio - RK Manga" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Technical Writing Portfolio - RK Manga
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              FAQ / Troubleshooting Doc — Docker Desktop
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="cyan" data-md-color-accent="deep-orange"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-orange"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Writing Samples
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Technical Writing Portfolio - RK Manga" class="md-nav__button md-logo" aria-label="Technical Writing Portfolio - RK Manga" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Technical Writing Portfolio - RK Manga
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Writing Samples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>FAQ / Troubleshooting Doc — Docker Desktop</h1>
+
+<section class="section" markdown="1">
+
+<h2 class="section-title"><span class="icon-holder"><i class="fas fa-question-circle"></i></span>FAQ / Troubleshooting Doc</h2>
+
+<div class="annotation-block" style="background: #f0f7f4; border: 1px solid #c3ddd5; border-radius: 4px; padding: 18px 22px; margin-bottom: 32px;">
+  <h4 style="margin-top: 0; color: #2e6b5e; font-size: 1rem;">About This Sample</h4>
+  <table style="width: 100%; font-size: 0.88rem; border-collapse: collapse;">
+    <tr>
+      <td style="width: 130px; font-weight: 600; padding: 4px 10px 4px 0; vertical-align: top; color: #444;">Product</td>
+      <td style="padding: 4px 0; color: #555;">Docker Desktop — a real, widely used application that provides a GUI and CLI for building, running, and managing containers on Windows and macOS development machines.</td>
+    </tr>
+    <tr>
+      <td style="font-weight: 600; padding: 4px 10px 4px 0; vertical-align: top; color: #444;">Audience</td>
+      <td style="padding: 4px 0; color: #555;">Developers who are new to containerization and have just installed Docker Desktop (or are trying to), primarily on Windows 10/11 and macOS (Intel or Apple Silicon). Assumes basic command-line comfort but not Docker expertise.</td>
+    </tr>
+    <tr>
+      <td style="font-weight: 600; padding: 4px 10px 4px 0; vertical-align: top; color: #444;">Tools Used</td>
+      <td style="padding: 4px 0; color: #555;">MS Word, Docker CLI (to validate all commands), Windows Subsystem for Linux 2 (WSL2) documentation review.</td>
+    </tr>
+    <tr>
+      <td style="font-weight: 600; padding: 4px 10px 4px 0; vertical-align: top; color: #444;">Challenge Solved</td>
+      <td style="padding: 4px 0; color: #555;">Docker Desktop's official troubleshooting page lists many issues but doesn't prioritize by frequency or explain root causes in plain language. Support tickets from new users clustered around six recurring problems. The challenge was writing a focused, scannable guide that addressed the most common failure scenarios — without assuming users understood virtualization concepts — and reduced the need for escalation.</td>
+    </tr>
+  </table>
+</div>
+
+---
+
+## Docker Desktop Troubleshooting Guide
+
+Use this guide to resolve the most common issues encountered when installing and running Docker Desktop on Windows and macOS.
+
+---
+
+### Contents
+
+1. [Docker Desktop fails to start on Windows](#1-docker-desktop-fails-to-start-on-windows)
+2. [WSL2 installation or kernel update error (Windows)](#2-wsl2-installation-or-kernel-update-error-windows)
+3. [Cannot connect to the Docker daemon](#3-cannot-connect-to-the-docker-daemon)
+4. [Port is already in use / address already in use](#4-port-is-already-in-use--address-already-in-use)
+5. [Container exits immediately after starting](#5-container-exits-immediately-after-starting)
+6. [Docker Desktop is running slowly or using too much disk](#6-docker-desktop-is-running-slowly-or-using-too-much-disk)
+7. [Volume mounts not working on macOS](#7-volume-mounts-not-working-on-macos)
+8. [No internet access inside a container](#8-no-internet-access-inside-a-container)
+
+---
+
+### 1. Docker Desktop fails to start on Windows
+
+**Symptom:** Docker Desktop opens briefly and then closes, or shows "Docker Desktop starting…" indefinitely.
+
+**Common causes and fixes:**
+
+**Virtualization is not enabled in BIOS/UEFI.**
+Docker requires hardware virtualization. To check:
+1. Open Task Manager > **Performance** tab > **CPU**.
+2. Look for **Virtualization: Enabled** at the bottom.
+3. If it shows Disabled, restart your computer, enter BIOS/UEFI setup (typically by pressing F2, F12, or Del during boot), and enable **Intel VT-x** or **AMD-V**.
+
+**Hyper-V or WSL2 is not installed.**
+Docker on Windows requires either Hyper-V (Windows Pro/Enterprise) or WSL2 (Windows Home, Pro, or Enterprise). If you are on Windows Home, see [WSL2 Installation](#2-wsl2-installation-or-kernel-update-error-windows).
+
+To enable Hyper-V:
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c"># Run PowerShell as Administrator</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">Enable-WindowsOptionalFeature</span> <span class="n">-Online</span> <span class="n">-FeatureName</span> <span class="n">Microsoft-Hyper-V</span> <span class="n">-All</span>
+</span></code></pre></div>
+Restart your computer when prompted.
+
+**Docker Desktop installation is corrupted.**
+Uninstall Docker Desktop completely from **Settings > Apps**, restart, and download a fresh installer from [docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop/).
+
+---
+
+### 2. WSL2 Installation or Kernel Update Error (Windows)
+
+**Symptom:** Docker Desktop prompts you to install or update the WSL2 Linux kernel, or shows an error like: `WSL 2 requires an update to its kernel component.`
+
+**Fix:**
+1. Open your browser and download the WSL2 kernel update package from Microsoft: [aka.ms/wsl2kernel](https://aka.ms/wsl2kernel)
+2. Run the downloaded `.msi` installer.
+3. After installation, open PowerShell as Administrator and run:
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">wsl</span> <span class="p">-</span><span class="n">-set-default-version</span> <span class="n">2</span>
+</span></code></pre></div>
+1. Restart Docker Desktop.
+
+**If WSL is not installed at all:**
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c"># Run PowerShell as Administrator</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">wsl</span> <span class="p">-</span><span class="n">-install</span>
+</span></code></pre></div>
+This installs WSL2 and Ubuntu by default. Restart when prompted, then restart Docker Desktop.
+
+---
+
+### 3. Cannot Connect to the Docker Daemon
+
+**Symptom:** Running `docker ps` or any Docker CLI command returns:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+</span></code></pre></div>
+
+**Fix — Check that Docker Desktop is running:**
+The Docker daemon only runs when Docker Desktop is open. Look for the Docker whale icon in your system tray (Windows) or menu bar (macOS). If it's not there, launch Docker Desktop from your Applications folder or Start Menu and wait until the icon stops animating.
+
+**Fix — Restart the Docker service:**
+If Docker Desktop is open but the error persists:
+1. Right-click the Docker icon in your system tray or menu bar.
+2. Select **Restart Docker Desktop**.
+3. Wait 30–60 seconds for the daemon to fully restart, then retry your command.
+
+**On macOS, if the icon is missing:**
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>open<span class="w"> </span>/Applications/Docker.app
+</span></code></pre></div>
+
+---
+
+### 4. Port Is Already in Use / Address Already Bound
+
+**Symptom:** Starting a container with `-p` flag fails:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Error starting userland proxy: listen tcp 0.0.0.0:8080: bind: address already in use
+</span></code></pre></div>
+
+**Cause:** Another process on your machine is already using that port.
+
+**Fix — Find and stop the conflicting process:**
+
+On **macOS/Linux:**
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>lsof<span class="w"> </span>-i<span class="w"> </span>:8080
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="c1"># Shows the process using port 8080</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nb">kill</span><span class="w"> </span>-9<span class="w"> </span>&lt;PID&gt;
+</span></code></pre></div>
+
+On **Windows (PowerShell):**
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">netstat</span> <span class="n">-ano</span> <span class="p">|</span> <span class="n">findstr</span> <span class="p">:</span><span class="n">8080</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="c"># Note the PID in the last column</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nb">Stop-Process</span> <span class="n">-Id</span> <span class="p">&lt;</span><span class="n">PID</span><span class="p">&gt;</span> <span class="n">-Force</span>
+</span></code></pre></div>
+
+**Alternative — Use a different port:**
+Map the container to a different host port:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">9090</span>:8080<span class="w"> </span>my-image
+</span></code></pre></div>
+This maps port 9090 on your machine to port 8080 inside the container.
+
+---
+
+### 5. Container Exits Immediately After Starting
+
+**Symptom:** You run `docker run my-image` and the container exits within seconds. `docker ps` shows nothing running; `docker ps -a` shows the container with an `Exited (1)` or `Exited (0)` status.
+
+**Cause:** The container's main process finished or crashed. Containers only run as long as their primary process is running.
+
+**Fix — Check the container logs:**
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>docker<span class="w"> </span>logs<span class="w"> </span>&lt;container-id-or-name&gt;
+</span></code></pre></div>
+This shows the stdout/stderr output from inside the container, which usually explains the error.
+
+**Common sub-causes:**
+
+- **Missing entry point or command:** The Dockerfile's `CMD` or `ENTRYPOINT` points to a script that doesn't exist in the image. Verify the path is correct.
+- **Application crash on startup:** A missing environment variable or misconfigured setting causes the app to exit. Check the logs for error messages and ensure required environment variables are passed with `-e` or `--env-file`.
+- **Interactive container without a terminal:** If you built an image that expects an interactive shell, start it with `-it`:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </span>my-image<span class="w"> </span>/bin/bash
+</span></code></pre></div>
+
+---
+
+### 6. Docker Desktop Is Running Slowly or Using Too Much Disk
+
+**Symptom:** Your computer runs slowly while Docker is open, or you see a notification that the Docker disk image has grown very large.
+
+**Fix — Reclaim disk space:**
+
+Old images, stopped containers, and unused volumes accumulate over time. Remove them with:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># Remove all stopped containers, unused networks, dangling images, and build cache</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>docker<span class="w"> </span>system<span class="w"> </span>prune
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="c1"># Also remove unused volumes (adds -v flag)</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>docker<span class="w"> </span>system<span class="w"> </span>prune<span class="w"> </span>-a<span class="w"> </span>--volumes
+</span></code></pre></div>
+> ⚠️ `--volumes` permanently deletes data in unused volumes. Only use this if you are sure you don't need that data.
+
+**Fix — Limit Docker's resource usage:**
+
+1. Open Docker Desktop and go to **Settings > Resources**.
+2. Reduce **CPUs** and **Memory** to values appropriate for your machine (e.g., 2 CPUs, 4 GB RAM for a typical development machine).
+3. Click **Apply & Restart**.
+
+---
+
+### 7. Volume Mounts Not Working on macOS
+
+**Symptom:** A container starts but the mounted directory appears empty, even though files exist at that path on your Mac.
+
+**Cause:** Docker Desktop on macOS uses a Linux VM; file sharing must be explicitly configured.
+
+**Fix:**
+1. Open Docker Desktop > **Settings > Resources > File Sharing**.
+2. Click **+** and add the folder path you are trying to mount (e.g., `/Users/yourname/projects`).
+3. Click **Apply & Restart**.
+4. Retry your `docker run` command with the `-v` flag.
+
+> ℹ️ On Docker Desktop 4.x and later with VirtioFS enabled, `/Users`, `/Volumes`, `/private`, and `/tmp` are shared by default. If you are mounting a path outside those directories, you must add it manually.
+
+---
+
+### 8. No Internet Access Inside a Container
+
+**Symptom:** Commands inside the container that require internet access fail (`curl`, `apt-get update`, `pip install`, etc.).
+
+**Fix — Check Docker's DNS settings:**
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># Inside the container, test DNS resolution</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>alpine<span class="w"> </span>nslookup<span class="w"> </span>google.com
+</span></code></pre></div>
+If this fails, Docker may have a DNS conflict with your host machine's VPN or corporate firewall.
+
+**Override DNS for a container:**
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--dns<span class="w"> </span><span class="m">8</span>.8.8.8<span class="w"> </span>my-image
+</span></code></pre></div>
+
+**Global DNS override (Docker Desktop):**
+1. Go to **Settings > Docker Engine**.
+2. Add `"dns": ["8.8.8.8", "8.8.4.4"]` to the JSON configuration:
+<div class="language-json highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="p">{</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">  </span><span class="nt">&quot;dns&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;8.8.8.8&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;8.8.4.4&quot;</span><span class="p">]</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="p">}</span>
+</span></code></pre></div>
+1. Click **Apply & Restart**.
+
+If you are on a corporate VPN, contact your network administrator — VPN clients often redirect DNS in ways that conflict with Docker's virtual network.
+
+---
+
+*All commands in this guide were verified on Docker Desktop 4.28 (Windows 11 and macOS 14 Sonoma).*
+*For issues not covered here, visit the [Docker Community Forums](https://forums.docker.com) or submit a bug report via Docker Desktop's **Help > Report an issue** menu.*
+
+</section>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 RK Manga | All rights reserved.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.tabs", "navigation.sections", "navigation.footer", "navigation.indexes", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
