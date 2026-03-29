@@ -14,7 +14,7 @@ A love of all things tech and constant curiosity has helped me keep updated with
 
 ##### Background
 
-Before moving into technical writing, I was a software test automation engineer scripting automated test cases for SaaS web applications and APIs. That strong background in software development and programming equips me with the ability complex technical concepts and communicating them effectively.
+Before moving into technical writing, I was a software test automation engineer scripting automated test cases for SaaS web applications and APIs. That strong background in software development and programming equips me with the ability to understand complex technical concepts and communicating them effectively.
 
 ## Writing Samples
 
